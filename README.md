@@ -16,13 +16,14 @@ This is a simulated cryptocurrency trading platform built with Java and Spring B
 ### Backend
 - **Language:** Java 17
 - **Framework:** Spring Boot
-- **Database:** PostgreSQL
 - **WebSocket Integration:** Kraken V2 WebSocket API (Ticker Level 1)
 - **Data Access:** Raw SQL using `JdbcTemplate` ( No ORM used as per requirements)
-- - **Security:** Spring Security
+-  **Security:** Spring Security
 - **Testing:** JUnit
 - **Error Handling:** Centralized via `@RestControllerAdvice`
 - **API Documentation:** Swagger/OpenAPI - http://localhost:8080/swagger-ui/index.html
+
+### Database -  PostgreSQL
 
 ### FrontEnd
 - **Language:** JavaScript
@@ -91,6 +92,8 @@ Chart.js
   - Total value
   - Profit/Loss (for sell transactions)
 
+Transaction filltering based on Transaction Type - Sell, Buy and ALL.
+
 ###  Reset Functionality
 - Clears all holdings and transactions
 - Resets user balance to $10,000
@@ -125,7 +128,7 @@ tables:
 | `cryptocurrencies` | Stores coin name/symbol/rank    |
 | `price_snapshots`  | Stores periodic price points    |
 
-
+Also a transaction type enum - with types - Buy and Sell.
 
 Screenshots:
 
