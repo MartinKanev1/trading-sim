@@ -1,0 +1,102 @@
+
+.crypto-table-row {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 10px;
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr 4fr 2fr;
+  align-items: center;
+  padding: 18px 24px;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  border-radius: 10px;
+  transition: box-shadow 0.2s ease;
+}
+
+.crypto-table-row:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.name-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.coin-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+}
+
+.price-cell {
+  font-weight: 500;
+  color: #222;
+ 
+}
+
+.trade-button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 999px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.trade-button:hover {
+  background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+  .crypto-table-row {
+    grid-template-columns: 4fr 2fr 2fr;
+  }
+
+  .rank-cell,
+  .chart-cell {
+    display: none;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .crypto-table-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px 16px;
+    gap: 5px;
+  }
+
+  .rank-cell,
+  .chart-cell {
+    display: none;
+  }
+
+  .price-cell {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    
+  }
+
+  .button-cell {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .trade-button {
+    font-size: 0.85rem;
+    padding: 6px 14px;
+    white-space: nowrap;
+  }
+}
+
+
+
+

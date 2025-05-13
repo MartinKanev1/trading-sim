@@ -1,0 +1,112 @@
+
+.holdings-card {
+  display: grid;
+  grid-template-columns: 1fr 100px 100px 100px 80px;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.holdings-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.coin-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.coin-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.coin-name {
+  font-weight: 600;
+}
+
+.coin-symbol {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.price,
+.quantity,
+.total {
+  text-align: right;
+}
+
+.card-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.trade-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.trade-btn:hover {
+  background-color: #0056b3;
+}
+
+.label-mobile {
+  display: none;
+  font-weight: 500;
+  margin-right: 4px;
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  .holdings-card {
+    grid-template-columns: 1fr;
+    text-align: left;
+    padding: 16px;
+    row-gap: 12px;
+  }
+
+  .card-left {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .price,
+  .quantity,
+  .total {
+    text-align: left;
+    font-size: 0.9rem;
+  }
+
+  .card-right {
+    justify-content: flex-start;
+  }
+
+  .trade-btn {
+    margin-top: 10px;
+  }
+
+  .label-mobile {
+    display: inline;
+  }
+}

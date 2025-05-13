@@ -1,0 +1,155 @@
+
+.transaction-list {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-x: hidden;
+}
+
+.transaction-list h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.filter-container select {
+  padding: 6px 12px;
+  margin-left: 8px;
+  font-size: 16px;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.transaction-table th {
+  background-color: #eee;
+}
+
+
+
+
+.filter-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.filter-container select {
+  padding: 6px 12px;
+  margin-left: 8px;
+  font-size: 16px;
+}
+
+
+.no-transactions-msg {
+  text-align: center;
+  color: #444;
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 40px 20px;
+}
+
+
+
+@media (max-width: 768px) {
+  .table-wrapper {
+    overflow-x: hidden;
+  }
+
+  .transaction-table {
+    border-collapse: separate;
+    border-spacing: 0 12px;
+  }
+
+  .transaction-table thead {
+    display: none;
+  }
+
+  .transaction-table,
+  .transaction-table tbody,
+  .transaction-table tr,
+  .transaction-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .transaction-table tr {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 12px;
+  }
+
+  .transaction-table td {
+    padding: 8px 12px;
+    position: relative;
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .transaction-table td::before {
+    content: attr(data-label);
+    display: inline-block;
+    font-weight: bold;
+    width: auto;
+    margin-right: 10px;
+  }
+
+  .buy-row {
+    background-color: #e8f5e9;
+  }
+
+  .sell-row {
+    background-color: #ffebee;
+  }
+}
+
+@media (max-width: 480px) {
+  .transaction-list {
+    padding: 5px;
+    overflow-x: hidden;
+    
+  }
+
+  .transaction-table td {
+    font-size: 13px;
+    padding: 6px 6px;
+  }
+
+  .transaction-table td::before {
+    
+    font-size: 12px;
+    width: auto;
+  }
+
+  .filter-container select {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+
+  .transaction-list h2 {
+    font-size: 18px;
+  }
+}
+
+

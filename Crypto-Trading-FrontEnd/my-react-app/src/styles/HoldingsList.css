@@ -1,0 +1,53 @@
+
+
+.holdings-container {
+  padding: 20px;
+  max-width: 850px;
+  margin: 0 auto;
+  
+  
+}
+
+.holdings-header {
+  display: grid;
+  grid-template-columns: 1fr 100px 100px 100px 80px;
+  align-items: center;
+  font-weight: bold;
+  color: #444;
+  background-color: transparent;
+  padding: 12px 20px;
+  max-width: 800px;
+  margin: 0 auto 12px auto;
+  font-size: 0.95rem;
+  text-align: right;
+}
+
+
+
+
+.holdings-header span:first-child {
+  text-align: left;
+}
+
+
+
+.no-holdings-msg {
+  text-align: center;
+  color: #666;
+  font-size: 2rem;
+  font-style: bold;
+  margin-top: 20px;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .holdings-header {
+    display: none; 
+  }
+
+  .holdings-container {
+    padding: 10px;
+  }
+}

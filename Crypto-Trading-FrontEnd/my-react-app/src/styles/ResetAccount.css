@@ -1,0 +1,59 @@
+.reset-container {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 20px 0; 
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: 100%;         
+  max-width: none;     
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 15px;
+  
+}
+
+
+.reset-container h3 {
+  margin-top: 0;
+}
+
+.reset-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.reset-button:hover {
+  background-color: #e60000;
+}
+
+.status-message {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #333;
+}
+
+.confirm-reset {
+  margin-top: 10px;
+}
+
+.cancel-button {
+  background-color: #aaa;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.cancel-button:hover {
+  background-color: #888;
+}
+
